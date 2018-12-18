@@ -41,7 +41,7 @@ class MainLayout extends Component {
             </Menu>
           </Sider>
           <Layout>
-            <Header style={{ background: '#fff', padding: 0 }}>
+            <Header style={{ background: '#fff', padding: 0 }} className="layoutHeader">
               <Icon
                   className="trigger"
                   type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
@@ -49,7 +49,7 @@ class MainLayout extends Component {
                   />
             </Header>
             <Content style={{
-            margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280
+            margin: '15px', padding: 15, background: '#fff', minHeight: 280
           }}
                 >
               {this.props.children}
