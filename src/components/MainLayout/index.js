@@ -48,10 +48,7 @@ class MainLayout extends Component {
                   onClick={this.toggle.bind(this)}
                   />
             </Header>
-            <Content style={{
-            margin: '15px', padding: 15, background: '#fff', minHeight: 280
-          }}
-                >
+            <Content style={{margin: '15px', padding: 15, background: '#fff', minHeight: 280}}>
               {this.props.children}
             </Content>
           </Layout>
