@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import MainLayout from '../MainLayout';
 import './index.css';
 
 //language
@@ -44,10 +45,12 @@ class App extends Component {
     return (
       this.state.initDone &&
       <div className="app-wrapper container-fluid d-flex flex-column p-0">
+        <MainLayout>
           <Router>
             <Switch>
             </Switch>
           </Router>
+        </MainLayout>
       </div>
     );
   }
